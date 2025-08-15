@@ -4,7 +4,7 @@ import { getPostsByLocale } from "~/utils"
 
 export async function GET() {
   const posts = await getPostsByLocale(defaultLanguage)
-  const config = defaultLanguage === "en" ? en : zh
+  const config = en
 
   return rss({
     title: config.meta.title,

@@ -12,6 +12,7 @@ export const ui = {
     "nav.archive": "Archive",
     "nav.about": "About",
     "nav.links": "Links",
+    "links.title": "Links",
     "blog.latest": "Latest Posts",
     "archive.title": "All Posts",
     "tag.title": "Tag:",
