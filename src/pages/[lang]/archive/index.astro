@@ -1,13 +1,13 @@
 ---
 import PostList from "~/components/astro/post-list.astro"
-import { en, zh } from "~/config"
+import { en } from "~/config"
 import { getLangFromUrl } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
 import { getPostsByLocale } from "~/utils"
 import { getLanguagePaths } from "~/utils/langs"
 
 const lang = getLangFromUrl(Astro.url)
-const pageMeta = lang === "zh" ? zh.pageMeta : en.pageMeta
+const pageMeta = en.pageMeta
 
 export function getStaticPaths() {
   return getLanguagePaths()

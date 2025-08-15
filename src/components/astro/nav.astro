@@ -5,8 +5,7 @@ import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-const { home, archive, custom, links, about } =
-  lang === "zh" ? zh.navigation : en.navigation
+const { home, archive, custom, links, about } = en.navigation
 ---
 
 <div

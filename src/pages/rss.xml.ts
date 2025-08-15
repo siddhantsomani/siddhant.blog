@@ -1,5 +1,5 @@
 import rss from "@astrojs/rss"
-import { defaultLanguage, en, zh } from "~/config"
+import { defaultLanguage, en } from "~/config"
 import { getPostsByLocale } from "~/utils"
 
 export async function GET() {
