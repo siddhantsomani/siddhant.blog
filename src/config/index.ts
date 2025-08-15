@@ -6,7 +6,7 @@ export const common = {
   domain: "https://siddhant.blog",
   meta: {
     favicon: "/avatar.png",
-    url: "unavailable",
+    url: "https://siddhant.blog",
   },
   googleAnalyticsId: "",
   social: [
