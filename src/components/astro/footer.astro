@@ -1,0 +1,28 @@
+---
+const currentYear = new Date().getFullYear()
+---
+
+<footer class="flex flex-wrap items-center gap-1 py-10">
+  <p>&copy; {currentYear}</p>
+
+  {
+    [
+      {
+        text: "Powered By",
+        link: "https://github.com/sun0225SUN/astro-air",
+        label: "Astro Air",
+      },
+    ].map((item, index) => (
+      <>
+        {index > 0 && <p class="mx-1">|</p>}
+        <p>{item.text}</p>
+        <a
+          href={item.link}
+          class="text-blue-600 transition-colors duration-200 hover:text-blue-800"
+        >
+          {item.label}
+        </a>
+      </>
+    ))
+  }
+</footer>

@@ -1,0 +1,25 @@
+---
+import LinkCard from "~/components/astro/link-card.astro"
+import { en } from "~/config"
+import { getLangFromUrl, useTranslations } from "~/i18n/utils"
+import MainLayout from "~/layouts/main.astro"
+import { getLanguagePaths } from "~/utils/langs"
+
+export function getStaticPaths() {
+  return getLanguagePaths()
+}
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const pageMeta = en.pageMeta
+---
+
+<MainLayout
+  title="Links"
+  description="My links and resources"
+  ogImage=""
+  needComment={true}
+>
+  <h3 class="my-10 text-center text-xl font-bold">{t("links.title")}</h3>
+
+</MainLayout>
