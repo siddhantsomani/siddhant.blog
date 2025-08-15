@@ -54,13 +54,18 @@ export const en = {
   pageMeta: {
     archive: {
       title: "All Posts",
-      description: "Here are Siddhant Somani's all posts",
+      description: "Here are Siddhant Somani's posts",
       ogImage: "/images/page-meta/en/archive.png",
     },
     about: {
       title: "About Me",
       description: "Here is Siddhant Somani's self-introduction",
       ogImage: "/images/page-meta/en/about.png",
+    },
+    links: {
+      title: "Links",
+      description: "My favorite links and resources",
+      ogImage: "/images/page-meta/en/links.png",
     },
   },
 }
